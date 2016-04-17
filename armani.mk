@@ -100,3 +100,10 @@ $(LOCAL_PATH)/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
 $(LOCAL_PATH)/system/etc/sec_config:system/etc/sec_config \
 $(LOCAL_PATH)/system/etc/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf \
 $(LOCAL_PATH)/system/etc/thermal-engine-8226.conf:system/etc/thermal-engine-8226.conf
+
+#	KEYLAYOUT
+PRODUCT_COPY_FILES += \
+$(LOCAL_PATH)/system/usr/keylayout/ft5x06.kl:system/usr/keylayout/ft5x06.kl \
+$(LOCAL_PATH)/system/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
+$(LOCAL_PATH)/system/usr/keylayout/ist30xx.kl:system/usr/keylayout/ist30xx.kl \
+$(LOCAL_PATH)/system/usr/keylayout/msm8226-tapan-snd-card_Button_Jack.kl:system/usr/keylayout/msm8226-tapan-snd-card_Button_Jack.kl
