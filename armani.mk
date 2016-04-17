@@ -88,3 +88,15 @@ $(LOCAL_PATH)/system/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
 $(LOCAL_PATH)/system/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
 $(LOCAL_PATH)/system/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
 $(LOCAL_PATH)/system/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so
+
+#     CONFIGS
+PRODUCT_COPY_FILES += \
+$(LOCAL_PATH)/system/etc/audio_effects.conf:system/etc/audio_effects.conf \
+$(LOCAL_PATH)/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
+$(LOCAL_PATH)/system/etc/media_codecs.xml:system/etc/media_codecs.xml \
+$(LOCAL_PATH)/system/etc/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
+$(LOCAL_PATH)/system/etc/media_profiles.xml:system/etc/media_profiles.xml \
+$(LOCAL_PATH)/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
+$(LOCAL_PATH)/system/etc/sec_config:system/etc/sec_config \
+$(LOCAL_PATH)/system/etc/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf \
+$(LOCAL_PATH)/system/etc/thermal-engine-8226.conf:system/etc/thermal-engine-8226.conf
