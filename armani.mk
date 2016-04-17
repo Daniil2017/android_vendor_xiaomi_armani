@@ -42,7 +42,9 @@ $(LOCAL_PATH)/system/etc/acdbdata/MTP/MTP_Handset_cal.acdb:system/etc/acdbdata/M
 $(LOCAL_PATH)/system/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb:system/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb \
 $(LOCAL_PATH)/system/etc/acdbdata/MTP/MTP_Headset_cal.acdb:system/etc/acdbdata/MTP/MTP_Headset_cal.acdb \
 $(LOCAL_PATH)/system/etc/acdbdata/MTP/MTP_Speaker_cal.acdb:system/etc/acdbdata/MTP/MTP_Speaker_cal.acdb \
-$(LOCAL_PATH)/system/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
+$(LOCAL_PATH)/system/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so
+#	(THEMUPPETS MOTOROLA MSM8226-COMMON)
+PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/system/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
 $(LOCAL_PATH)/system/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
 $(LOCAL_PATH)/system/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
@@ -107,3 +109,6 @@ $(LOCAL_PATH)/system/usr/keylayout/ft5x06.kl:system/usr/keylayout/ft5x06.kl \
 $(LOCAL_PATH)/system/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
 $(LOCAL_PATH)/system/usr/keylayout/ist30xx.kl:system/usr/keylayout/ist30xx.kl \
 $(LOCAL_PATH)/system/usr/keylayout/msm8226-tapan-snd-card_Button_Jack.kl:system/usr/keylayout/msm8226-tapan-snd-card_Button_Jack.kl
+
+PRODUCT_COPY_FILES += \
+vendor/omni/prebuilt/bootanimation/res/1080x720.zip:system/media/bootanimation.zip
