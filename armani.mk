@@ -174,3 +174,8 @@ PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/system/bin/thermal-engine:system/bin/thermal-engine \
 $(LOCAL_PATH)/system/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
 $(LOCAL_PATH)/system/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so
+
+#	TIME SERVICES (THEMUPPETS MOTOROLA MSM8226-COMMON)
+PRODUCT_COPY_FILES += \
+$(LOCAL_PATH)/system/bin/time_daemon:system/bin/time_daemon \
+$(LOCAL_PATH)/system/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so
