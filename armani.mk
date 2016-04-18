@@ -168,3 +168,9 @@ $(LOCAL_PATH)/system/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-q
 $(LOCAL_PATH)/system/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
 $(LOCAL_PATH)/system/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
 $(LOCAL_PATH)/system/vendor/lib/libxml.so:system/vendor/lib/libxml.so
+
+#	THERMAL (V7.2.4.0)
+PRODUCT_COPY_FILES += \
+$(LOCAL_PATH)/system/bin/thermal-engine:system/bin/thermal-engine \
+$(LOCAL_PATH)/system/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
+$(LOCAL_PATH)/system/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so
