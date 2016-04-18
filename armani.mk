@@ -110,7 +110,7 @@ $(LOCAL_PATH)/system/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.k
 $(LOCAL_PATH)/system/usr/keylayout/ist30xx.kl:system/usr/keylayout/ist30xx.kl \
 $(LOCAL_PATH)/system/usr/keylayout/msm8226-tapan-snd-card_Button_Jack.kl:system/usr/keylayout/msm8226-tapan-snd-card_Button_Jack.kl
 
-# PERF (THEMUPPETS MOTOROLA MSM8226-COMMON)
+#	PERF (THEMUPPETS MOTOROLA MSM8226-COMMON)
 PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/system/bin/mpdecision:system/bin/mpdecision \
 $(LOCAL_PATH)/system/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so
@@ -132,3 +132,21 @@ $(LOCAL_PATH)/system/etc/wifi/WCNSS_cfg.dat:system/etc/wifi/WCNSS_cfg.dat \
 $(LOCAL_PATH)/system/etc/wifi/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
 $(LOCAL_PATH)/system/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/wifi/WCNSS_qcom_wlan_nv.bin \
 $(LOCAL_PATH)/system/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
+
+#	QUALCOMM (THEMUPPETS XIAOMI CANCRO)
+PRODUCT_COPY_FILES += \
+$(LOCAL_PATH)/system/bin/irsc_util:system/bin/irsc_util \
+$(LOCAL_PATH)/system/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
+$(LOCAL_PATH)/system/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
+$(LOCAL_PATH)/system/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
+$(LOCAL_PATH)/system/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
+$(LOCAL_PATH)/system/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
+$(LOCAL_PATH)/system/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
+$(LOCAL_PATH)/system/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
+$(LOCAL_PATH)/system/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
+$(LOCAL_PATH)/system/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
+$(LOCAL_PATH)/system/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
+$(LOCAL_PATH)/system/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
+$(LOCAL_PATH)/system/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
+$(LOCAL_PATH)/system/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
+$(LOCAL_PATH)/system/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so
