@@ -110,5 +110,25 @@ $(LOCAL_PATH)/system/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.k
 $(LOCAL_PATH)/system/usr/keylayout/ist30xx.kl:system/usr/keylayout/ist30xx.kl \
 $(LOCAL_PATH)/system/usr/keylayout/msm8226-tapan-snd-card_Button_Jack.kl:system/usr/keylayout/msm8226-tapan-snd-card_Button_Jack.kl
 
+# PERF (THEMUPPETS MOTOROLA MSM8226-COMMON)
 PRODUCT_COPY_FILES += \
-vendor/omni/prebuilt/bootanimation/res/1080x720.zip:system/media/bootanimation.zip
+$(LOCAL_PATH)/system/bin/mpdecision:system/bin/mpdecision \
+$(LOCAL_PATH)/system/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so
+
+#	WIFI (V7.2.4.0)
+PRODUCT_COPY_FILES += \
+$(LOCAL_PATH)/system/etc/firmware/wcnss.b00:system/etc/firmware/wcnss.b00 \
+$(LOCAL_PATH)/system/etc/firmware/wcnss.b01:system/etc/firmware/wcnss.b01 \
+$(LOCAL_PATH)/system/etc/firmware/wcnss.b02:system/etc/firmware/wcnss.b02 \
+$(LOCAL_PATH)/system/etc/firmware/wcnss.b04:system/etc/firmware/wcnss.b04 \
+$(LOCAL_PATH)/system/etc/firmware/wcnss.b06:system/etc/firmware/wcnss.b06 \
+$(LOCAL_PATH)/system/etc/firmware/wcnss.b07:system/etc/firmware/wcnss.b07 \
+$(LOCAL_PATH)/system/etc/firmware/wcnss.b08:system/etc/firmware/wcnss.b08 \
+$(LOCAL_PATH)/system/etc/firmware/wcnss.b09:system/etc/firmware/wcnss.b09 \
+$(LOCAL_PATH)/system/etc/firmware/wcnss.mdt:system/etc/firmware/wcnss.mdt \
+$(LOCAL_PATH)/system/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
+$(LOCAL_PATH)/system/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
+$(LOCAL_PATH)/system/etc/wifi/WCNSS_cfg.dat:system/etc/wifi/WCNSS_cfg.dat \
+$(LOCAL_PATH)/system/etc/wifi/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
+$(LOCAL_PATH)/system/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/wifi/WCNSS_qcom_wlan_nv.bin \
+$(LOCAL_PATH)/system/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
