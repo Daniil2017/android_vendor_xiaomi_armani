@@ -150,3 +150,21 @@ $(LOCAL_PATH)/system/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
 $(LOCAL_PATH)/system/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
 $(LOCAL_PATH)/system/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
 $(LOCAL_PATH)/system/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so
+
+#	RADIO (THEMUPPETS XIAOMI CANCRO)
+PRODUCT_COPY_FILES += \
+$(LOCAL_PATH)/system/bin/netmgrd:system/bin/netmgrd \
+$(LOCAL_PATH)/system/bin/qmuxd:system/bin/qmuxd \
+$(LOCAL_PATH)/system/bin/radish:system/bin/radish \
+$(LOCAL_PATH)/system/bin/rfs_access:system/bin/rfs_access \
+$(LOCAL_PATH)/system/bin/rmt_storage:system/bin/rmt_storage \
+$(LOCAL_PATH)/system/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
+$(LOCAL_PATH)/system/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
+$(LOCAL_PATH)/system/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
+$(LOCAL_PATH)/system/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
+$(LOCAL_PATH)/system/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
+$(LOCAL_PATH)/system/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
+$(LOCAL_PATH)/system/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
+$(LOCAL_PATH)/system/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
+$(LOCAL_PATH)/system/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
+$(LOCAL_PATH)/system/vendor/lib/libxml.so:system/vendor/lib/libxml.so
