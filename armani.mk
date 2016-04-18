@@ -179,3 +179,20 @@ $(LOCAL_PATH)/system/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermali
 PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/system/bin/time_daemon:system/bin/time_daemon \
 $(LOCAL_PATH)/system/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so
+
+#	MEDIA (THEMUPPETS MOTOROLA MSM8226-COMMON)
+PRODUCT_COPY_FILES += \
+$(LOCAL_PATH)/system/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
+$(LOCAL_PATH)/system/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
+$(LOCAL_PATH)/system/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
+$(LOCAL_PATH)/system/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
+$(LOCAL_PATH)/system/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so
+#	(V7.2.4.0)
+PRODUCT_COPY_FILES += \
+$(LOCAL_PATH)/system/etc/firmware/venus.b00:system/etc/firmware/venus.b00 \
+$(LOCAL_PATH)/system/etc/firmware/venus.b01:system/etc/firmware/venus.b01 \
+$(LOCAL_PATH)/system/etc/firmware/venus.b02:system/etc/firmware/venus.b02 \
+$(LOCAL_PATH)/system/etc/firmware/venus.b03:system/etc/firmware/venus.b03 \
+$(LOCAL_PATH)/system/etc/firmware/venus.b04:system/etc/firmware/venus.b04 \
+$(LOCAL_PATH)/system/etc/firmware/venus.mbn:system/etc/firmware/venus.mbn \
+$(LOCAL_PATH)/system/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt
