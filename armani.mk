@@ -6,9 +6,13 @@ LOCAL_PATH := vendor/xiaomi/armani
 
 #	RECOVERY RAMDISK
 PRODUCT_COPY_FILES += \
-   $(LOCAL_PATH)/boot/recovery_ramdisk/init.recovery.armani.rc:recovery/root/init.recovery.armani.rc
+$(LOCAL_PATH)/boot/recovery_ramdisk/init.recovery.armani.rc:recovery/root/init.recovery.armani.rc
 
 #	BOOT RAMDISK
+PRODUCT_COPY_FILES += \
+$(LOCAL_PATH)/boot/ramdisk/init.armani.rc:root/init.armani.rc \
+$(LOCAL_PATH)/boot/ramdisk/init.armani.usb.rc:root/init.armani.usb.rc \
+$(LOCAL_PATH)/boot/ramdisk/init.target.rc:root/init.target.rc
 
 #	GRAPHICS (THEMUPPETS MOTOROLA MSM8226-COMMON)
 PRODUCT_COPY_FILES += \
