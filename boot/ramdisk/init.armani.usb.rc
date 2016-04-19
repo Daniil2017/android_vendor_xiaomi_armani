@@ -48,17 +48,6 @@ on property:ro.product.device=armani
     setprop ro.usb.pid.mass_storage 1220
     setprop ro.usb.pid.mass_storage.adb 1228
 
-
-on property:ro.product.device=dior
-    setprop ro.usb.pid.rndis 1380
-    setprop ro.usb.pid.rndis.adb 1388
-    setprop ro.usb.pid.ptp 1310
-    setprop ro.usb.pid.ptp.adb 1318
-    setprop ro.usb.pid.mtp 1360
-    setprop ro.usb.pid.mtp.adb 1368
-    setprop ro.usb.pid.mass_storage 1320
-    setprop ro.usb.pid.mass_storage.adb 1328
-
 on property:sys.usb.config=diag,adb
     write /sys/class/android_usb/android0/enable 0
     write /sys/class/android_usb/android0/idVendor 05C6
