@@ -201,3 +201,32 @@ $(LOCAL_PATH)/system/etc/firmware/venus.b03:system/etc/firmware/venus.b03 \
 $(LOCAL_PATH)/system/etc/firmware/venus.b04:system/etc/firmware/venus.b04 \
 $(LOCAL_PATH)/system/etc/firmware/venus.mbn:system/etc/firmware/venus.mbn \
 $(LOCAL_PATH)/system/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt
+
+#	GPS (THEMUPPETS MOTOROLA MSM8226-COMMON)
+PRODUCT_COPY_FILES += \
+$(LOCAL_PATH)/system/bin/location-mq:system/bin/location-mq \
+$(LOCAL_PATH)/system/bin/xtwifi-client:system/bin/xtwifi-client \
+$(LOCAL_PATH)/system/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
+$(LOCAL_PATH)/system/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
+$(LOCAL_PATH)/system/etc/gps.conf:system/etc/gps.conf \
+$(LOCAL_PATH)/system/etc/izat.conf:system/etc/izat.conf \
+$(LOCAL_PATH)/system/etc/quipc.conf:system/etc/quipc.conf \
+$(LOCAL_PATH)/system/etc/sap.conf:system/etc/sap.conf \
+$(LOCAL_PATH)/system/etc/xtwifi.conf:system/etc/xtwifi.conf \
+$(LOCAL_PATH)/system/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
+$(LOCAL_PATH)/system/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
+$(LOCAL_PATH)/system/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
+$(LOCAL_PATH)/system/vendor/lib/libalarmservice_jni.so:system/vendor/lib/libalarmservice_jni.so \
+$(LOCAL_PATH)/system/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
+$(LOCAL_PATH)/system/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
+$(LOCAL_PATH)/system/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
+$(LOCAL_PATH)/system/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
+$(LOCAL_PATH)/system/vendor/lib/libloc_ext.so:system/vendor/lib/libloc_ext.so \
+$(LOCAL_PATH)/system/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
+$(LOCAL_PATH)/system/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
+$(LOCAL_PATH)/system/vendor/lib/libquipc_ulp_adapter.so:system/vendor/lib/libquipc_ulp_adapter.so \
+$(LOCAL_PATH)/system/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
+$(LOCAL_PATH)/system/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
+$(LOCAL_PATH)/system/vendor/lib/libxt_native.so:system/vendor/lib/libxt_native.so \
+$(LOCAL_PATH)/system/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
+$(LOCAL_PATH)/system/vendor/lib/libxtwifi_zpp_adaptor.so:system/vendor/lib/libxtwifi_zpp_adaptor.so
