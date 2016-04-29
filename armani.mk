@@ -12,7 +12,8 @@ $(LOCAL_PATH)/boot/recovery_ramdisk/init.recovery.armani.rc:recovery/root/init.r
 PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/boot/ramdisk/init.armani.rc:root/init.armani.rc \
 $(LOCAL_PATH)/boot/ramdisk/init.armani.usb.rc:root/init.armani.usb.rc \
-$(LOCAL_PATH)/boot/ramdisk/fstab.armani:root/fstab.armani
+$(LOCAL_PATH)/boot/ramdisk/fstab.armani:root/fstab.armani \
+$(LOCAL_PATH)/boot/ramdisk/ueventd.armani.rc:root/ueventd.armani.rc
 
 #	GRAPHICS (THEMUPPETS MOTOROLA MSM8226-COMMON)
 PRODUCT_COPY_FILES += \
