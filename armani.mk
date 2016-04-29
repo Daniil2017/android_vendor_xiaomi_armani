@@ -98,7 +98,7 @@ $(LOCAL_PATH)/system/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/li
 
 #     CONFIGS
 PRODUCT_COPY_FILES += \
-$(LOCAL_PATH)/system/etc/audio_effects.conf:system/etc/audio_effects.conf \
+$(LOCAL_PATH)/system/vendor/etc/audio_effects.conf:system/etc/vendor/audio_effects.conf \
 $(LOCAL_PATH)/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
 $(LOCAL_PATH)/system/etc/media_codecs.xml:system/etc/media_codecs.xml \
 $(LOCAL_PATH)/system/etc/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
