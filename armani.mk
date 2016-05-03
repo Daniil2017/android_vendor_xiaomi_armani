@@ -133,9 +133,9 @@ $(LOCAL_PATH)/system/etc/firmware/wcnss.b09:system/etc/firmware/wcnss.b09 \
 $(LOCAL_PATH)/system/etc/firmware/wcnss.mdt:system/etc/firmware/wcnss.mdt \
 $(LOCAL_PATH)/system/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
 $(LOCAL_PATH)/system/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
-$(LOCAL_PATH)/system/etc/wifi/WCNSS_cfg.dat:system/etc/wifi/WCNSS_cfg.dat \
+$(LOCAL_PATH)/system/etc/firmware/wlan/prima/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
 $(LOCAL_PATH)/system/etc/wifi/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
-$(LOCAL_PATH)/system/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/wifi/WCNSS_qcom_wlan_nv.bin \
+$(LOCAL_PATH)/system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
 $(LOCAL_PATH)/system/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
 
 #	QUALCOMM (THEMUPPETS XIAOMI CANCRO)
@@ -230,3 +230,10 @@ $(LOCAL_PATH)/system/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.s
 $(LOCAL_PATH)/system/vendor/lib/libxt_native.so:system/vendor/lib/libxt_native.so \
 $(LOCAL_PATH)/system/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
 $(LOCAL_PATH)/system/vendor/lib/libxtwifi_zpp_adaptor.so:system/vendor/lib/libxtwifi_zpp_adaptor.so
+
+#	BLUETOOTH (THEMUPPETS MOTOROLA MSM8226-COMMON)
+PRODUCT_COPY_FILES += \
+$(LOCAL_PATH)/system/bin/btnvtool:system/bin/btnvtool \
+$(LOCAL_PATH)/system/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
+$(LOCAL_PATH)/system/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
+$(LOCAL_PATH)/system/etc/init.qcom.bt.sh:system/etc/init.qcom.bt.sh
