@@ -48,6 +48,7 @@ $(LOCAL_PATH)/system/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb:system/etc/acdbdata/MTP/
 $(LOCAL_PATH)/system/etc/acdbdata/MTP/MTP_Headset_cal.acdb:system/etc/acdbdata/MTP/MTP_Headset_cal.acdb \
 $(LOCAL_PATH)/system/etc/acdbdata/MTP/MTP_Speaker_cal.acdb:system/etc/acdbdata/MTP/MTP_Speaker_cal.acdb \
 $(LOCAL_PATH)/system/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so
+
 #	(THEMUPPETS MOTOROLA MSM8226-COMMON)
 PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/system/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
@@ -65,7 +66,12 @@ $(LOCAL_PATH)/system/vendor/firmware/keymaster/keymaster.b00:system/vendor/firmw
 $(LOCAL_PATH)/system/vendor/firmware/keymaster/keymaster.b01:system/vendor/firmware/keymaster/keymaster.b01 \
 $(LOCAL_PATH)/system/vendor/firmware/keymaster/keymaster.b02:system/vendor/firmware/keymaster/keymaster.b02 \
 $(LOCAL_PATH)/system/vendor/firmware/keymaster/keymaster.b03:system/vendor/firmware/keymaster/keymaster.b03 \
-$(LOCAL_PATH)/system/vendor/firmware/keymaster/keymaster.mdt:system/vendor/firmware/keymaster/keymaster.mdt
+$(LOCAL_PATH)/system/vendor/firmware/keymaster/keymaster.mdt:system/vendor/firmware/keymaster/keymaster.mdt \
+$(LOCAL_PATH)/boot/ramdisk/firmware/image/keymaster.b00:root/firmware/image/keymaster.b00 \
+$(LOCAL_PATH)/boot/ramdisk/firmware/image/keymaster.b01:root/firmware/image/keymaster.b01 \
+$(LOCAL_PATH)/boot/ramdisk/firmware/image/keymaster.b02:root/firmware/image/keymaster.b02 \
+$(LOCAL_PATH)/boot/ramdisk/firmware/image/keymaster.b03:root/firmware/image/keymaster.b03 \
+$(LOCAL_PATH)/boot/ramdisk/firmware/image/keymaster.mdt:root/firmware/image/keymaster.mdt
 
 #     ADSP (THEMUPPETS MOTOROLA MSM8226-COMMON)
 PRODUCT_COPY_FILES += \
@@ -237,3 +243,77 @@ $(LOCAL_PATH)/system/bin/btnvtool:system/bin/btnvtool \
 $(LOCAL_PATH)/system/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
 $(LOCAL_PATH)/system/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
 $(LOCAL_PATH)/system/etc/init.qcom.bt.sh:system/etc/init.qcom.bt.sh
+
+#	SENSORS (THEMUPPETS XIAOMI CANCRO)
+PRODUCT_COPY_FILES += \
+$(LOCAL_PATH)/system/bin/sensors.qcom:system/bin/sensors.qcom \
+$(LOCAL_PATH)/system/vendor/lib/hw/sensors.msm8226.so:system/vendor/lib/hw/sensors.msm8226.so \
+$(LOCAL_PATH)/system/vendor/lib/libAKM8963.so:system/vendor/lib/libAKM8963.so \
+$(LOCAL_PATH)/system/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
+$(LOCAL_PATH)/system/vendor/lib/libsensor_reg.so:system/vendor/lib/libsensor_reg.so \
+$(LOCAL_PATH)/system/vendor/lib/libsensor_test.so:system/vendor/lib/libsensor_test.so \
+$(LOCAL_PATH)/system/vendor/lib/libsensor_user_cal.so:system/vendor/lib/libsensor_user_cal.so
+
+#	CAMERA (V7.1.1.0)
+PRODUCT_COPY_FILES += \
+$(LOCAL_PATH)/system/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
+$(LOCAL_PATH)/system/lib/hw/camera.vendor.msm8226.so:system/lib/hw/camera.vendor.msm8226.so \
+$(LOCAL_PATH)/system/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
+$(LOCAL_PATH)/system/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
+$(LOCAL_PATH)/system/lib/libqomx_core.so:system/lib/libqomx_core.so \
+$(LOCAL_PATH)/system/vendor/lib/libactuator_dw9714.so:system/vendor/lib/libactuator_dw9714.so \
+$(LOCAL_PATH)/system/vendor/lib/libactuator_dw9714_camcorder.so:system/vendor/lib/libactuator_dw9714_camcorder.so \
+$(LOCAL_PATH)/system/vendor/lib/libactuator_dw9714_camera.so:system/vendor/lib/libactuator_dw9714_camera.so \
+$(LOCAL_PATH)/system/vendor/lib/libarcsoft_beauty_shot.so:system/vendor/lib/libarcsoft_beauty_shot.so \
+$(LOCAL_PATH)/system/vendor/lib/libFaceDeform.so:system/vendor/lib/libFaceDeform.so \
+$(LOCAL_PATH)/system/vendor/lib/libFaceProc.so:system/vendor/lib/libFaceProc.so \
+$(LOCAL_PATH)/system/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
+$(LOCAL_PATH)/system/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
+$(LOCAL_PATH)/system/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
+$(LOCAL_PATH)/system/vendor/lib/libmmcamera_ov9760_eeprom.so:system/vendor/lib/libmmcamera_ov9760_eeprom.so \
+$(LOCAL_PATH)/system/vendor/lib/libmmcamera_ov9760_q1v05a.so:system/vendor/lib/libmmcamera_ov9760_q1v05a.so \
+$(LOCAL_PATH)/system/vendor/lib/libmmcamera_s5k3h2yx_eeprom.so:system/vendor/lib/libmmcamera_s5k3h2yx_eeprom.so \
+$(LOCAL_PATH)/system/vendor/lib/libmmcamera_s5k3h2yx_owt8a01a.so:system/vendor/lib/libmmcamera_s5k3h2yx_owt8a01a.so \
+$(LOCAL_PATH)/system/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
+$(LOCAL_PATH)/system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
+$(LOCAL_PATH)/system/vendor/lib/libmmcamera_wavelet_lib.so:system/vendor/lib/libmmcamera_wavelet_lib.so \
+$(LOCAL_PATH)/system/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
+$(LOCAL_PATH)/system/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
+$(LOCAL_PATH)/system/vendor/lib/libmmcamera2_frame_algorithm.so:system/vendor/lib/libmmcamera2_frame_algorithm.so \
+$(LOCAL_PATH)/system/vendor/lib/libmmcamera2_iface_modules.so:system/vendor/lib/libmmcamera2_iface_modules.so \
+$(LOCAL_PATH)/system/vendor/lib/libmmcamera2_imglib_modules.so:system/vendor/lib/libmmcamera2_imglib_modules.so \
+$(LOCAL_PATH)/system/vendor/lib/libmmcamera2_isp_modules.so:system/vendor/lib/libmmcamera2_isp_modules.so \
+$(LOCAL_PATH)/system/vendor/lib/libmmcamera2_pproc_modules.so:system/vendor/lib/libmmcamera2_pproc_modules.so \
+$(LOCAL_PATH)/system/vendor/lib/libmmcamera2_sensor_modules.so:system/vendor/lib/libmmcamera2_sensor_modules.so \
+$(LOCAL_PATH)/system/vendor/lib/libmmcamera2_stats_algorithm.so:system/vendor/lib/libmmcamera2_stats_algorithm.so \
+$(LOCAL_PATH)/system/vendor/lib/libmmcamera2_stats_modules.so:system/vendor/lib/libmmcamera2_stats_modules.so \
+$(LOCAL_PATH)/system/vendor/lib/libmmcamera2_vpe_module.so:system/vendor/lib/libmmcamera2_vpe_module.so \
+$(LOCAL_PATH)/system/vendor/lib/libmmcamera2_wnr_module.so:system/vendor/lib/libmmcamera2_wnr_module.so \
+$(LOCAL_PATH)/system/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
+$(LOCAL_PATH)/system/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
+$(LOCAL_PATH)/system/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
+$(LOCAL_PATH)/system/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw
+#	(THEMUPPETS MOTOROLA MSM8226-COMMON)
+PRODUCT_COPY_FILES += \
+$(LOCAL_PATH)/system/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
+$(LOCAL_PATH)/system/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
+$(LOCAL_PATH)/system/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
+$(LOCAL_PATH)/system/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
+$(LOCAL_PATH)/system/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
+$(LOCAL_PATH)/system/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so
+
+#	CHROMATIX (V7.1.1.0)
+PRODUCT_COPY_FILES += \
+$(LOCAL_PATH)/system/vendor/lib/libchromatix_ov9760_q1v05a_common.so:system/vendor/lib/libchromatix_ov9760_q1v05a_common.so \
+$(LOCAL_PATH)/system/vendor/lib/libchromatix_ov9760_q1v05a_default_video.so:system/vendor/lib/libchromatix_ov9760_q1v05a_default_video.so \
+$(LOCAL_PATH)/system/vendor/lib/libchromatix_ov9760_q1v05a_liveshot.so:system/vendor/lib/libchromatix_ov9760_q1v05a_liveshot.so \
+$(LOCAL_PATH)/system/vendor/lib/libchromatix_ov9760_q1v05a_preview.so:system/vendor/lib/libchromatix_ov9760_q1v05a_preview.so \
+$(LOCAL_PATH)/system/vendor/lib/libchromatix_s5k3h2yx_owt8a01a_common.so:system/vendor/lib/libchromatix_s5k3h2yx_owt8a01a_common.so \
+$(LOCAL_PATH)/system/vendor/lib/libchromatix_s5k3h2yx_owt8a01a_default_video.so:system/vendor/lib/libchromatix_s5k3h2yx_owt8a01a_default_video.so \
+$(LOCAL_PATH)/system/vendor/lib/libchromatix_s5k3h2yx_owt8a01a_liveshot.so:system/vendor/lib/libchromatix_s5k3h2yx_owt8a01a_liveshot.so \
+$(LOCAL_PATH)/system/vendor/lib/libchromatix_s5k3h2yx_owt8a01a_preview.so:system/vendor/lib/libchromatix_s5k3h2yx_owt8a01a_preview.so \
+$(LOCAL_PATH)/system/vendor/lib/libchromatix_s5k3h2yx_owt8a01a_preview_hd.so:system/vendor/lib/libchromatix_s5k3h2yx_owt8a01a_preview_hd.so \
+$(LOCAL_PATH)/system/vendor/lib/libchromatix_s5k3h2yx_owt8a01a_snapshot.so:system/vendor/lib/libchromatix_s5k3h2yx_owt8a01a_snapshot.so \
+$(LOCAL_PATH)/system/vendor/lib/libchromatix_s5k3h2yx_owt8a01a_snapshot_hd.so:system/vendor/lib/libchromatix_s5k3h2yx_owt8a01a_snapshot_hd.so \
+$(LOCAL_PATH)/system/vendor/lib/libchromatix_s5k3h2yx_owt8a01a_video_hd.so:system/vendor/lib/libchromatix_s5k3h2yx_owt8a01a_video_hd.so \
+$(LOCAL_PATH)/system/vendor/lib/libchromatix_s5k3h2yx_owt8a01a_zsl.so:system/vendor/lib/libchromatix_s5k3h2yx_owt8a01a_zsl.so
