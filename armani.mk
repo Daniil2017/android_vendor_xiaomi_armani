@@ -66,12 +66,7 @@ $(LOCAL_PATH)/system/vendor/firmware/keymaster/keymaster.b00:system/vendor/firmw
 $(LOCAL_PATH)/system/vendor/firmware/keymaster/keymaster.b01:system/vendor/firmware/keymaster/keymaster.b01 \
 $(LOCAL_PATH)/system/vendor/firmware/keymaster/keymaster.b02:system/vendor/firmware/keymaster/keymaster.b02 \
 $(LOCAL_PATH)/system/vendor/firmware/keymaster/keymaster.b03:system/vendor/firmware/keymaster/keymaster.b03 \
-$(LOCAL_PATH)/system/vendor/firmware/keymaster/keymaster.mdt:system/vendor/firmware/keymaster/keymaster.mdt \
-$(LOCAL_PATH)/boot/ramdisk/firmware/image/keymaster.b00:root/firmware/image/keymaster.b00 \
-$(LOCAL_PATH)/boot/ramdisk/firmware/image/keymaster.b01:root/firmware/image/keymaster.b01 \
-$(LOCAL_PATH)/boot/ramdisk/firmware/image/keymaster.b02:root/firmware/image/keymaster.b02 \
-$(LOCAL_PATH)/boot/ramdisk/firmware/image/keymaster.b03:root/firmware/image/keymaster.b03 \
-$(LOCAL_PATH)/boot/ramdisk/firmware/image/keymaster.mdt:root/firmware/image/keymaster.mdt
+$(LOCAL_PATH)/system/vendor/firmware/keymaster/keymaster.mdt:system/vendor/firmware/keymaster/keymaster.mdt
 
 #     ADSP (THEMUPPETS MOTOROLA MSM8226-COMMON)
 PRODUCT_COPY_FILES += \
