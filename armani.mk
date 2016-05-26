@@ -38,7 +38,7 @@ $(LOCAL_PATH)/system/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adr
 $(LOCAL_PATH)/system/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
 $(LOCAL_PATH)/system/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so
 
-#     AUDIO (V7.2.4.0)
+#     ACDB (V7.2.3.0)
 PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/system/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:system/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
 $(LOCAL_PATH)/system/etc/acdbdata/MTP/MTP_General_cal.acdb:system/etc/acdbdata/MTP/MTP_General_cal.acdb \
@@ -49,7 +49,7 @@ $(LOCAL_PATH)/system/etc/acdbdata/MTP/MTP_Headset_cal.acdb:system/etc/acdbdata/M
 $(LOCAL_PATH)/system/etc/acdbdata/MTP/MTP_Speaker_cal.acdb:system/etc/acdbdata/MTP/MTP_Speaker_cal.acdb \
 $(LOCAL_PATH)/system/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so
 
-#	(THEMUPPETS MOTOROLA MSM8226-COMMON)
+#	AUDIO (THEMUPPETS MOTOROLA MSM8226-COMMON)
 PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/system/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
 $(LOCAL_PATH)/system/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
@@ -60,7 +60,7 @@ $(LOCAL_PATH)/system/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soun
 $(LOCAL_PATH)/system/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
 $(LOCAL_PATH)/system/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so
 
-#     KEYSTORE (V7.1.1.0)
+#     KEYSTORE (V7.2.3.0)
 PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/system/vendor/firmware/keymaster/keymaster.b00:system/vendor/firmware/keymaster/keymaster.b00 \
 $(LOCAL_PATH)/system/vendor/firmware/keymaster/keymaster.b01:system/vendor/firmware/keymaster/keymaster.b01 \
@@ -113,7 +113,6 @@ $(LOCAL_PATH)/system/etc/thermal-engine-8226.conf:system/etc/thermal-engine-8226
 PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/system/usr/keylayout/ft5x06.kl:system/usr/keylayout/ft5x06.kl \
 $(LOCAL_PATH)/system/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
-$(LOCAL_PATH)/system/usr/keylayout/ist30xx.kl:system/usr/keylayout/ist30xx.kl \
 $(LOCAL_PATH)/system/usr/keylayout/msm8226-tapan-snd-card_Button_Jack.kl:system/usr/keylayout/msm8226-tapan-snd-card_Button_Jack.kl
 
 #	PERF (THEMUPPETS MOTOROLA MSM8226-COMMON)
@@ -175,7 +174,7 @@ $(LOCAL_PATH)/system/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libri
 $(LOCAL_PATH)/system/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
 $(LOCAL_PATH)/system/vendor/lib/libxml.so:system/vendor/lib/libxml.so
 
-#	THERMAL (V7.2.4.0)
+#	THERMAL (V7.2.3.0)
 PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/system/bin/thermal-engine:system/bin/thermal-engine \
 $(LOCAL_PATH)/system/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
@@ -193,7 +192,7 @@ $(LOCAL_PATH)/system/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420
 $(LOCAL_PATH)/system/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
 $(LOCAL_PATH)/system/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
 $(LOCAL_PATH)/system/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so
-#	(V7.2.4.0)
+#	(V7.2.3.0)
 PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/system/etc/firmware/venus.b00:system/etc/firmware/venus.b00 \
 $(LOCAL_PATH)/system/etc/firmware/venus.b01:system/etc/firmware/venus.b01 \
@@ -249,7 +248,7 @@ $(LOCAL_PATH)/system/vendor/lib/libsensor_reg.so:system/vendor/lib/libsensor_reg
 $(LOCAL_PATH)/system/vendor/lib/libsensor_test.so:system/vendor/lib/libsensor_test.so \
 $(LOCAL_PATH)/system/vendor/lib/libsensor_user_cal.so:system/vendor/lib/libsensor_user_cal.so
 
-#	CAMERA (V7.1.1.0)
+#	CAMERA (V7.2.3.0)
 PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/system/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
 $(LOCAL_PATH)/system/lib/hw/camera.vendor.msm8226.so:system/lib/hw/camera.vendor.msm8226.so \
@@ -297,7 +296,7 @@ $(LOCAL_PATH)/system/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg
 $(LOCAL_PATH)/system/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
 $(LOCAL_PATH)/system/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so
 
-#	CHROMATIX (V7.1.1.0)
+#	CHROMATIX (V7.2.3.0)
 PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/system/vendor/lib/libchromatix_ov9760_q1v05a_common.so:system/vendor/lib/libchromatix_ov9760_q1v05a_common.so \
 $(LOCAL_PATH)/system/vendor/lib/libchromatix_ov9760_q1v05a_default_video.so:system/vendor/lib/libchromatix_ov9760_q1v05a_default_video.so \
