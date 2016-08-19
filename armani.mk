@@ -311,3 +311,7 @@ $(LOCAL_PATH)/system/vendor/lib/libchromatix_s5k3h2yx_owt8a01a_snapshot.so:syste
 $(LOCAL_PATH)/system/vendor/lib/libchromatix_s5k3h2yx_owt8a01a_snapshot_hd.so:system/vendor/lib/libchromatix_s5k3h2yx_owt8a01a_snapshot_hd.so \
 $(LOCAL_PATH)/system/vendor/lib/libchromatix_s5k3h2yx_owt8a01a_video_hd.so:system/vendor/lib/libchromatix_s5k3h2yx_owt8a01a_video_hd.so \
 $(LOCAL_PATH)/system/vendor/lib/libchromatix_s5k3h2yx_owt8a01a_zsl.so:system/vendor/lib/libchromatix_s5k3h2yx_owt8a01a_zsl.so
+
+#	MEDIA
+PRODUCT_COPY_FILES += \
+$(LOCAL_PATH)/system/media/audio/alarms/1_Good_Morning.ogg:system/media/audio/alarms/1_Good_Morning.ogg
