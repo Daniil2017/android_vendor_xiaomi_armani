@@ -1,3 +1,4 @@
+
 /dev/kgsl-3d0             0666   system     system
 /dev/ion                  0664   system     system
 /dev/rtc0                 0600   system     system
